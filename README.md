@@ -1,39 +1,26 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Pyth SDK for Dart
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages). 
+A **Dart port of the [Pyth JavaScript SDK](https://github.com/pyth-network/pyth-crosschain/tree/main/price_service/sdk/js)**, originally developed by the **Pyth Data Association**.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages). 
--->
+This package allows Dart and Flutter developers to interact with the [Pyth Network](https://pyth.network), parse on-chain price feeds, and work with accumulator updates in a Dart/Flutter environment.
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+---
 
-## Features
+## ✨ Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- Parse and validate **AccumulatorUpdateData** messages.
+- Work with **PriceFeed** and **Price** objects.
+- Support for **TWAP (Time Weighted Average Price)** parsing.
+- Big-endian number parsing using Dart’s `ByteData` and `Uint8List`.
+- Compatible with **Flutter** and **pure Dart** projects.
 
-## Getting started
+---
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+## 🚀 Installation
 
-## Usage
+Add to your `pubspec.yaml`:
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
-
-```dart
-const like = 'sample';
+```yaml
+dependencies:
+  pyth_sdk_dart: ^0.1.0
 ```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
